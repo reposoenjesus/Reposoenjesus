@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -92,6 +92,31 @@
             margin: 10px auto;
         }
 
+        /* --- ESTILO BOTÓN FUNDACIÓN --- */
+        .contenedor-boton-fundacion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .btn-fundacion {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-fundacion:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(184, 134, 11, 0.4);
+        }
+
         /* --- SISTEMA DE CARDS --- */
         .grid-cards {
             display: grid;
@@ -173,6 +198,13 @@
     </header>
 
     <div class="container">
+        
+        <div class="contenedor-boton-fundacion">
+            <a href="https://reposoenjesus.github.io/Funrej/" class="btn-fundacion">
+                <i class="fas fa-hand-holding-heart"></i> Fundación
+            </a>
+        </div>
+
         <h2 class="titulo-seccion">Nuestros Ministerios</h2>
         <div class="grid-cards">
             <div class="card">
